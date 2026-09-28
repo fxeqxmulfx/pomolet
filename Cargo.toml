@@ -1,9 +1,11 @@
 [package]
 name = "pomolet"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT AND OFL-1.1"
 description = "A minimal Pomodoro desktop timer with focus sounds"
+homepage = "https://github.com/fxeqxmulfx/pomolet"
+repository = "https://github.com/fxeqxmulfx/pomolet"
 keywords = ["pomodoro", "timer", "focus", "desktop", "iced"]
 
 [dependencies]
