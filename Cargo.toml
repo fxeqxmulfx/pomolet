@@ -1,0 +1,19 @@
+[package]
+name = "pomolet"
+version = "0.1.0"
+edition = "2021"
+license = "MIT AND OFL-1.1"
+description = "A minimal Pomodoro desktop timer with focus sounds"
+keywords = ["pomodoro", "timer", "focus", "desktop", "iced"]
+
+[dependencies]
+chrono = { version = "0.4.45", default-features = false, features = ["clock"] }
+dirs = "7.0.0"
+iced = { version = "0.14.0", default-features = false, features = ["tiny-skia", "wayland", "x11", "tokio", "lazy"] }
+rodio = { version = "0.22.2", default-features = false, features = ["playback", "noise"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tokio = { version = "1.53.1", features = ["sync"] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+zbus = "4.4.0"
